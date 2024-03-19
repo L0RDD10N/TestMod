@@ -2,7 +2,7 @@ package net.rene.testmod;
 
 import com.mojang.logging.LogUtils;
 import net.rene.testmod.block.ModBlocks;
-import net.rene.testmod.item.ModCreativeModTabs;
+import net.rene.testmod.item.ModCreativeModeTabs;
 import net.rene.testmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -26,7 +26,7 @@ public class TestMod {
     public TestMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModCreativeModTabs.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
